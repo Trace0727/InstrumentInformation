@@ -7,13 +7,14 @@ A simple Java console program that asks the user to enter details about two musi
 ## Project Structure
 
 ```
-    InstrumentInformation/
-    ├── src/
-    │   ├── Instrument.java
-    │   ├── StringInstrument.java
-    │   └── InstrumentInformation.java
-    └──
+InstrumentInformation/
+├── src/
+│   ├── Instrument.java
+│   ├── StringInstrument.java
+│   └── InstrumentInformation.java
+└──
 ```
+
 ---
 
 ## Core Java Classes
@@ -37,6 +38,21 @@ Acts as the program driver:
 - Prompts the user for general and string instrument details
 - Instantiates `Instrument` and `StringInstrument` objects with the input
 - Prints the general instrument block, then the string instrument block with extra details
+
+---
+
+## How to Run
+
+### From an IDE
+1. Open the project folder.
+2. Navigate to `InstrumentInformation.java`.
+3. Click **Run** on the main method and follow the prompts in the console.
+
+### From the command line
+```bash
+javac src/InstrumentInformation.java src/Instrument.java src/StringInstrument.java -d out
+java -cp out InstrumentInformation
+```
 
 ---
 
